@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - PolyGirroVibes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      	body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .intro {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+	.btn {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #ff6600;
+		color: white;
+		font-weight: bold;
+		border-radius: 5px;
+		transition : background 0.3s;
+	}
+	.btn:hover{
+		background: #cc5500;
+	}
+	img {
+		max-width: 100%;
+		height : auto;
+		display: block;
+		margin : 0 auto;
+		border-radius : 8px;
+		transition: opacity 0.3s ease-in-out;
+	}
+	img:hover{
+		opacity: 0.8;
+	}
+	/* ----- Version mobile ----- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Réduction des marges pour un meilleur affichage */
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Navigation plus compacte */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustement du header */
+    header {
+        padding: 15px 0;
+    }
+
+    /* Meilleure disposition des articles */
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Boutons plus accessibles */
+    button {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PolyGirroVibes - Accueil</h1>
+        <nav>
+            <a href="index.html" class='btn'>Accueil</a>
+            <a href="articles.html" class='btn'>Articles</a>
+	    <a href="about.html" class='btn'>&Agrave; propos</a>
+	    <a href="contact.html" class='btn'>Contact</a>
+        </nav>
+    </header><main>
+    <section class="intro">
+        <h2>Bienvenue sur PolyGirroVibes !</h2>
+	<center><img src="tous.jpg" alt="Illustration" style="width:100%;max-width:300px;"></center>
+        <p>Ce blog est avant tout une <strong>expérience personnelle</strong>, un espace où je partagerai mes pensées, mes histoires, mes découvertes et mes réflexions du quotidien.</p>
+        <p>Ici, il n’y a pas encore de grandes ambitions ni de règles strictes : on teste, on explore et surtout, on <strong>s’amuse</strong> !</p>
+        <p>Avec le temps, nous définirons des <strong>objectifs plus précis</strong>, mais pour l’instant, l’idée est simple : <em>expérimenter librement et voir où cela nous mène.</em></p>
+        <p>Alors, bienvenue à toi, curieux(se) ou futur(e) habitué(e) de ce petit coin d’internet !</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 - PolyGirroVibes. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

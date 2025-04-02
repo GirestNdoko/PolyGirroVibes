@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    	.contact-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Plus d'espace entre les sections */
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    justify-content: center; /* Centre les éléments */
+    align-items: center;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 350px;
+    padding: 30px;
+    text-align: left;
+}
+
+.contact-info {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-info a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Plus d’espace entre les champs */
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f7f7f7;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+/* ----- Version mobile ----- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Réduction des marges pour un meilleur affichage */
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Navigation plus compacte */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustement du header */
+    header {
+        padding: 15px 0;
+    }
+
+    /* Meilleure disposition des articles */
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Boutons plus accessibles */
+    button {
+        width: 100%;
+    }
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PolyGirroVibes - Contactez-moi</h1>
+        <nav>
+            <a href="index.html" class='btn'>Accueil</a>
+            <a href="about.html" class='btn'>À propos</a>
+            <a href="contact.html" class="active" class='btn'>Contact</a>
+        </nav>
+    </header>
+
+    <center><section class="contact-container">
+        <div class="contact-info">
+            <h2>Restons en contact !</h2>
+            <p>Vous avez une question, une suggestion ou vous voulez simplement discuter ? Remplissez le formulaire ci-dessous ou contactez-moi directement.</p>
+            <p><strong>Email :</strong> <a href="mailto:girestndoko@gmail.com">girestndoko@gmail.com</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Envoyez-moi un message</h3>
+            <form action="mailto:ton-email@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section></center>
+
+    <footer>
+        <p>&copy; 2025 - PolyGirroVibes. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

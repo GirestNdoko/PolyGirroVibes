@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - PolyGirroVibes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .article-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+	    margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0,0.2);
+	    border-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+	    transition: transform 0.3s ease-in-out;
+        }
+        .read-more {
+            display: block;
+            margin-top: 10px;
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+	.btn {
+		display: inline-block;
+		padding: 10px 20px;
+		background: #ff6600;
+		color: white;
+		font-weight: bold;
+		border-radius: 5px;
+		transition : background 0.3s;
+	}
+	.btn:hover{
+		background: #cc5500;
+	}
+	img {
+		max-width: 100%;
+		height : auto;
+		display: block;
+		margin : 0 auto;
+		border-radius : 8px;
+		transition: opacity 0.3s ease-in-out;
+	}
+	img:hover{
+		opacity: 0.8;
+	}
+	/* ----- Version mobile ----- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Réduction des marges pour un meilleur affichage */
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Navigation plus compacte */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustement du header */
+    header {
+        padding: 15px 0;
+    }
+
+    /* Meilleure disposition des articles */
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Boutons plus accessibles */
+    button {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PolyGirroVibes - Articles</h1>
+        <nav>
+             <a href="index.html" class='btn'>Accueil</a>
+            <a href="articles.html" class='btn'>Articles</a>
+	    <a href="about.html" class='btn'>&Agrave; propos</a>
+	    <a href="contact.html" class='btn'>Contact</a>
+        </nav>
+    </header><main>
+    <h2>Derniers Articles</h2>
+    <div class="article-container">
+        <article>
+            <h3>L'ECOLE NATIONALE SUPERIEURE POLYTECHNIQUE DE YAOUNDE</h3>
+            <p>L'ENSPY:Le point de départ d'une aventure extraordinaire...</p>
+            <a href="article1.html" class="read-more">Lire la suite...</a>
+        </article>
+    </div>
+    <div class="article-container">
+        <article>
+            <h3>BIENTOT DISPONIBLE</h3>
+            <p>...</p>
+            <a href="" class="read-more">Lire la suite...</a>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 - PolyGirroVibes. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
